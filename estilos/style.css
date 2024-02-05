@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* Paleta de cores;
+    azul:4F7CAC
+    cinza: C0E0DE  */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #C0E0DE;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+section#login{
+    background-color: white;
+    width: 270px;
+    height: 607px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514) ;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function:ease ;
+    max-width: 610px;
+    
+    
+}
+
+section#login > div#imagem{
+    display: block;
+    background:#4F7CAC url(../img/pexels-dinnow-9444476.jpg) no-repeat ;
+    background-size: cover;
+    background-position: right top;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#formulario > p{
+    font-size: 1.5em;
+}
+
+form >input[type=submit] {
+    display:block;
+    font-size: 0.9em;
+    width: 100%;
+    height: 30px;
+    background-color: #4F7CAC;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+form > input[type=submit]:houver {
+    background-color: #1e6ec4;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color:black;
+    border: 1px solid #1e6ec4;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #35587cbb;
+}
+
+form > a.botao > i {
+    font-size: 0.1em;
+}
+
+form > div.campo {
+    background-color: #6ea5df;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 4px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+.login{
+    position: absolute;
+    top: 450px;
+    left: 57px;
+    height: 5%;
+}
+
+.senha{
+    position: absolute;
+    top: 495px;
+    left: 57px;
+    height: 5%;
+    
+
+}
